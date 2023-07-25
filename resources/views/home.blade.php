@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <script>
+    <component :is="'script'">
         function copyToClipboard(url) {
             const el = document.createElement('textarea');
             el.value = url;
@@ -46,6 +46,6 @@
             document.execCommand('copy');
             document.body.removeChild(el);
         }
-    </script>
+    </component>
 </div>
 @endsection
